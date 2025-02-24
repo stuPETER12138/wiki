@@ -1,1 +1,0 @@
-export const store = ["/doing/ai/rag.html","/doing/ai/agent.html","/thinking/papereading/Marco1.html","/thinking/papereading/AI_Oscars.html","/thinking/papereading/DS-MoE.html","/thinking/college/IL_survey.html","/studying/markdown/latex.html","/studying/markdown/learningmd.html","/studying/vim/Tutor.html"];
