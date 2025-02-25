@@ -17,11 +17,16 @@ export default defineConfig({
     siteTitle: "魔法窝瓜",
     externalLinkIcon: true,
     footer: {
-      message: "Released under the MIT License.",
-      copyright: "Copyright © 2024-present Magic Squash",
+      message: "基于 MIT 许可发布",
+      copyright: "版权所有 © 2024-2025 魔法窝瓜",
     },
     search: {
-      provider: 'local',
+      provider: 'algolia',
+      options: {
+        appId: "P321X8CK4H",
+        apiKey: "f1d2025f594cfcad4dfef90f36a9495c",
+        indexName: "stupeter12138io",
+      },
     },
 
     // https://vitepress.dev/reference/default-theme-config
