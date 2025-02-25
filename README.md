@@ -1,13 +1,7 @@
-<h1 align="center">
-魔法窝瓜
-  
-任何足够先进的科技，皆与魔法无异
-</h1>
+# 魔法窝瓜
 
-<div align="center">
-  <img alt="Who I am" src="https://img.shields.io/badge/%E4%BD%9C%E8%80%85-魔法窝瓜-F7DC6F">
-  <img alt="Static Badge" src="https://img.shields.io/badge/%E6%A1%86%E6%9E%B6-Vitepress-blue">
-  <img alt="Static Badge" src="https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF%E8%AF%81-MIT-BB8FCE">
-</div>
+![example workflow](https://github.com/stuPETER12138/stuPETER12138.github.io/actions/workflows/deploy.yaml/badge.svg)
 
 ---
+
+> 任何足够先进的科技，皆与魔法无异 ——[亚瑟.克拉克](https://baike.baidu.com/item/%E4%BA%9A%E7%91%9F%C2%B7%E6%9F%A5%E7%90%86%E6%96%AF%C2%B7%E5%85%8B%E6%8B%89%E5%85%8B/213457)
