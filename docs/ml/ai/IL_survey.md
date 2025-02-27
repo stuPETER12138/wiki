@@ -12,7 +12,7 @@ The main purpose of Imitation Learning is to enable agents to learn to perform a
 
 ### Behavior Cloning
 
-![Figure: A Flow Chart of Behavior Cloning where s is the input and a is the output](../../thinking/images/bc.drawio.png)
+![Figure: A Flow Chart of Behavior Cloning where s is the input and a is the output](./images/bc.drawio.png)
 
 BC is an IL technique that treats the problem of learning a behavior as a supervised learning task. Given the expert state-action pairs, as shown in Figure, the embodied intelligent robot can predict the actions it should take in a particular state by training a classifier or regression model. It can be seen that Behavior cloning is the direct learning strategy through expert demonstration, that is, learning a mapping from state to action.
 

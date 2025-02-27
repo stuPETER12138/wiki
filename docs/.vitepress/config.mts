@@ -107,43 +107,72 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '来一起学习吧', link: 'studying/index' },
-      { text: '感受头脑风暴吗', link: 'thinking/index' },
+      { text: '工具与技能', link: 'skills/index' },
+      { text: '机器学习', link: 'ml/index' },
+      { text: '论生活', link: 'life/index' },
     ],
 
     sidebar: {
-      '/studying/': [
+      '/skills/': [
         {
-          text: '来一起学习吧',
+          text: '工具与技能',
+          items: [
+            {
+              text: '写作指北',
+              items: [
+                { text: 'Markdown 指北', link: '/skills/markdown/learningmd' },
+                { text: 'Latex 指北', link: '/skills/markdown/latex' },
+                { text: 'VIM 基础', link: '/skills/markdown/vim' },
+              ]
+            },
+            {
+              text: '工科软件',
+              items: [
+                { text: 'orCAD', link: '/skills/eda/hello_cad' },
+              ],
+            },
+          ],
+        }
+      ],
+
+      'ml': [
+        {
+          text: '机器学习',
           items: [
             {
               text: '人工智能基础',
               items: [
-                { text: 'Agent', link: '/studying/ai/agent' },
-                { text: 'RAG', link: '/studying/ai/rag' },
-                { text: 'IL', link: '/studying/ai/IL_survey' },
+                { text: 'Agent', link: '/ml/ai/agent' },
+                { text: 'RAG', link: '/ml/ai/rag' },
+                { text: 'IL', link: '/ml/ai/IL_survey' },
               ]
             },
             {
-              text: '写作指北',
+              text: '论文精读',
               items: [
-                { text: 'Markdown 指北', link: '/studying/markdown/learningmd' },
-                { text: 'Latex 指北', link: '/studying/markdown/latex' },
-                { text: 'VIM 基础', link: '/studying/markdown/vim' },
-              ]
-            }
+                { text: '初识论文', link: '/ml/papers/index' },
+                { text: 'AI_Oscars', link: '/ml/papers/AI_Oscars' },
+                { text: 'DS-MoE', link: '/ml/papers/DS-MoE' },
+                { text: 'Marco1', link: '/ml/papers/Marco1' },
+              ],
+            },
+            {
+              text: '强化学习',
+              items: [
+                {}
+              ],
+            },
           ],
         }
       ],
-      'thinking': [
+
+      'life': [
         {
-          text: '感受头脑风暴吗',
+          text: '生活作息',
           items: [
-            { text: 'AI_Oscars', link: '/thinking/AI_Oscars' },
-            { text: 'DS-MoE', link: '/thinking/DS-MoE' },
-            { text: 'Marco1', link: '/thinking/Marco1' },
+            { text: '', link: '' },
           ],
-        }
+        },
       ],
     },
 
@@ -151,7 +180,5 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/stuPETER12138' },
       { icon: 'bilibili', link: 'https://space.bilibili.com/671429743'},
     ]
-
   }
-
 })

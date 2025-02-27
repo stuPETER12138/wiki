@@ -1,7 +1,5 @@
 # latex 语法指北
 
-由于笔者较懒，一些公式/表达式的详细语法请读者在 [GitHub](https://github.com/stuPETER12138/stuPETER12138.github.io/blob/main/hope_docs/studying/markdown/latex.md) 上查阅。
-
 ### 引用公式
 
 - 行内公式 `$`

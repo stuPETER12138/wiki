@@ -1,6 +1,6 @@
 # VIM 基础教程
 
-IdeaVim[^1] Tutor: As you go through this tutor, do not try to memorize, learn by usage.
+[IdeaVim](https://github.com/JetBrains/ideavim)  Tutor: As you go through this tutor, do not try to memorize, learn by usage.
 
 ### 壹 
 
@@ -121,7 +121,4 @@ IdeaVim[^1] Tutor: As you go through this tutor, do not try to memorize, learn b
 至此，ideavim 教程结束。
 
 不过 ideavim 的学习却远不止于此。官方教程中还涉及到了 ideavimrc 启动脚本的创建，vim 基础教学，以及一些推荐书籍。
-感兴趣的同学请自行到 IdeaVim[^1] 官方学习。
-
-
-[^1]: [IdeaVim](https://github.com/JetBrains/ideavim)
+感兴趣的同学请自行到 IdeaVim 官方学习。
