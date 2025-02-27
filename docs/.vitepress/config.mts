@@ -159,7 +159,8 @@ export default defineConfig({
             {
               text: '强化学习',
               items: [
-                {}
+                { text: '初识 RL', link: '/ml/rl/hello_rl' },
+                { text: '马尔可夫决策过程', link: '/ml/rl/mdp' },
               ],
             },
           ],
