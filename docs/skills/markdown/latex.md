@@ -128,7 +128,6 @@ x^2+1 & x>0 \\
 -x^2+1 & x<0
 \end{cases}
 $$
-
 ### 大型数学运算符
 
 - $\sum$  $\int$  $\iint$  $\iiint$  $\lim$  $\prod$ $\cdots \cdots$ 
@@ -151,20 +150,17 @@ $$
 
 
 ### 箭头
-
 - $\leftarrow$
 - $\Rightarrow$
 - $\xrightarrow[x>y]{x+y}$
 - $\Longleftrightarrow$
-
-### 矩阵
-
 $$
 B = \begin{pmatrix}
 a & b\\
 c & d
 \end{pmatrix}
 $$
+
 $$
 A = \begin{vmatrix}
 a & b & c \\
@@ -172,6 +168,7 @@ d & e & f \\
 g & h & i
 \end{vmatrix}
 $$
+
 $$
 [C\ x] = \begin{bmatrix}
 \begin{array}{c c | c}

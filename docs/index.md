@@ -19,6 +19,11 @@ features:
     details: A voice clone model of the character Liang Yue in Reverse 1999, fine-tuned based on GPT-SoVITS v3.
     link: https://www.modelscope.cn/models/msforms/Liang-Voice
     linkText: 查看详情
+  - title: 来学强化学习吧！
+    icon: 🤔
+    details: 跟着“鱼书”学强化学习，这是我的学习笔记。
+    link: ../ml/rl/hello_rl
+    linkText: 查看详情
   - title: 持续更新
     icon: 🫡
     details: 我是日（yue）更博主！

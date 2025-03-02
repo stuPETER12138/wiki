@@ -31,6 +31,15 @@ $$
 ## MDP 的目标
 
 收益（return）被表示为智能代理获得的奖励之和。智能代理的目标是使收益最大化。
+$$
+\begin{aligned}
+G_t &= R_t + {\gamma}R_{t + 1} + {\gamma}^2 R_{t + 2} + \cdots \\
+&= R_t + {\gamma} ( R_{t + 1} + {\gamma} R_{t + 2} + \cdots ) \\
+&= R_t + {\gamma} G_{t + 1}
+\end{aligned}
+$$
+
+其中，$\gamma$ 成为折现率（discount rate），这使得近期的奖励显得更加重要。
 
 为了处理智能代理的随机行动，需要使用期望值或“收益的期望值”作为衡量标准。收益的期望值的数学式如下所示。
 $$

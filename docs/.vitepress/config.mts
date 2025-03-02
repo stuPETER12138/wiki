@@ -3,6 +3,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  title: '魔法窝瓜',
+
   lang: 'zh-Hans',
 
   srcDir: './',
@@ -13,6 +15,10 @@ export default defineConfig({
     lineNumbers: true,
     math: true,
   },
+
+  head: [
+    ['link', { rel: 'icon', type:"image/jpg", href: '/magicsquash.jpg' }],
+  ],
 
   themeConfig: {
     logo: "/magicsquash.jpg",
@@ -37,11 +43,16 @@ export default defineConfig({
     },
 
     outline: {
-      label: '页面导航'
+      label: '本页目录',
+      level: 'deep',
     },
 
     lastUpdated: {
       text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      },
     },
 
     returnToTopLabel: '回到顶部',
@@ -161,6 +172,11 @@ export default defineConfig({
               items: [
                 { text: '初识 RL', link: '/ml/rl/hello_rl' },
                 { text: '马尔可夫决策过程', link: '/ml/rl/mdp' },
+                { text: '贝尔曼方程', link: '/ml/rl/bellman' },
+                { text: '动态规划', link: '/ml/rl/dp' },
+                { text: '蒙特卡洛方法', link: '/ml/rl/mc' },
+                { text: '时间差分方法', link: '/ml/rl/td' },
+                { text: '神经网络和 Q 学习', link: '/ml/rl/nw' },
               ],
             },
           ],
@@ -169,7 +185,7 @@ export default defineConfig({
 
       'life': [
         {
-          text: '生活作息',
+          text: '读书笔记',
           items: [
             { text: '', link: '' },
           ],
