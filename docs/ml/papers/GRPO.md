@@ -25,11 +25,11 @@
 
 ## Data
 
-<img src="./images/x1.png" alt="data" style="zoom: 50%;" />
+<img src="./images/grpo_data.png" alt="data" style="zoom: 50%;" />
 
 ## Reinforcement Learning
 
-<img src="./images/x2.png" alt="GRPO" style="zoom:50%;" />
+<img src="./images/grpo.png" alt="GRPO" style="zoom:50%;" />
 
 <img src="./images/grpo_visual.png" style="zoom: 25%;" />
 
@@ -39,11 +39,13 @@ $$
 $$
 GPRO formula:
 $$
+\begin{aligned}
 \mathcal{J}_{GRPO}(\theta) = & \mathbb{E} \left[ q \sim P(Q)\, , \left\{ o_{i}\, \right\}_{i=1}^G \sim \pi_{\theta_{\text{old}}}(O \, |\, q)\, \right]
 \\
 &\quad \frac{1}{G} \sum_{i=1}^G \frac{1}{| o_{i} |} \sum_{t=1}^{| o_{i} |} \Bigg\{\ \min \left[ \frac{\pi_\theta( o_{i,t} | q, o_{i, < t} )}{\pi_{\theta_{\text{old}}}( o_{i,t} | q, o_{i, < t} )} \hat{A}_{i,t}, \right. 
 \\
-&\quad \left. \text{clip}\left( \frac{\pi_\theta( o_{i,t} | q, o_{i, < t} )}{\pi_{\theta_{\text{old}}}( o_{i,t} | q, o_{i, < t} )}, 1-\varepsilon, 1+\varepsilon \right) \hat{A}_{i,t} \right] - \beta \mathbb{D}_{\text{KL}} \big[ \pi_\theta \, \|\, \pi_{\text{ref}} \big] \Bigg\} 
+&\quad \left. \text{clip}\left( \frac{\pi_\theta( o_{i,t} | q, o_{i, < t} )}{\pi_{\theta_{\text{old}}}( o_{i,t} | q, o_{i, < t} )}, 1-\varepsilon, 1+\varepsilon \right) \hat{A}_{i,t} \right] - \beta \mathbb{D}_{\text{KL}} \big[ \pi_\theta \, \|\, \pi_{\text{ref}} \big] \Bigg\}    
+\end{aligned}
 $$
 
 Estimating the KL divergence(评估两个模型的相似度):

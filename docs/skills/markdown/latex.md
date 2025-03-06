@@ -121,16 +121,19 @@ $$
 ### 分段函数/方程组
 
 `&` 表示对齐，`\\` 用来换行，`\qquad` 可以表示空格
-$$\it
+
+$$
 f(x)=\begin{cases}
 x^2+1 & x>0 \\
 1 & x=o \\
 -x^2+1 & x<0
 \end{cases}
 $$
+
 ### 大型数学运算符
 
 - $\sum$  $\int$  $\iint$  $\iiint$  $\lim$  $\prod$ $\cdots \cdots$ 
+
 1. 运算分的上下限：
 	$\sum_0^\infty$
 	$\int_{-\infty}^{\infty}$
@@ -150,10 +153,12 @@ $$
 
 
 ### 箭头
+
 - $\leftarrow$
 - $\Rightarrow$
 - $\xrightarrow[x>y]{x+y}$
 - $\Longleftrightarrow$
+
 $$
 B = \begin{pmatrix}
 a & b\\

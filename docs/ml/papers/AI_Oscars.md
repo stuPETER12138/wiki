@@ -2,7 +2,7 @@
 
 This practice of aligning LLMs with specific personas or characters is commonly konwn as Role-Playing, aiming to fulfill human needs at a psychological and entertainment level. 
 
-![key components in role-playing](images/x1.png)
+![key components in role-playing](images/role_play.png)
 key components in role-playing
 
 ### **Data** 
@@ -11,7 +11,7 @@ key components in role-playing
 
 Commonly, role-playing datasets contain two important components: **interactions** and **role-related information**.
 
-![x2.png](images/x2.png)
+![x2.png](images/role_relate.png)
 
 Character-based role-playing scenarios involve simulating a broad spectrum of roles, categorized mainly into two categories: **real world-based** and **virtual scenario-based**.
 
@@ -60,7 +60,7 @@ Alignment plays a crucial role in defining **the upper limits** of a model's rol
 ![The main content flow and categorization of Agent Architecture](images/Capture_20241111_220224.jpg)
 The main content flow and categorization of Agent Architecture
 
-![x3.png](images/x3.png)
+![x3.png](images/rpla.png)
 
 - RPLAs often operate in environments that require them to remember and synthesize information over time, making memory modules an essential component of their architecture.
 

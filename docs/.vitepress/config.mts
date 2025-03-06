@@ -118,8 +118,9 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '工具与技能', link: 'skills/index' },
+      { text: '技能与工具', link: 'skills/index' },
       { text: '机器学习', link: 'ml/index' },
+      { text: '科学探索', link: 'explore/index' },
       { text: '论生活', link: 'life/index' },
     ],
 
@@ -165,6 +166,7 @@ export default defineConfig({
                 { text: 'AI_Oscars', link: '/ml/papers/AI_Oscars' },
                 { text: 'DS-MoE', link: '/ml/papers/DS-MoE' },
                 { text: 'Marco1', link: '/ml/papers/Marco1' },
+                { text: 'GRPO', link: '/ml/papers/GRPO' },
               ],
             },
             {
@@ -175,12 +177,45 @@ export default defineConfig({
                 { text: '贝尔曼方程', link: '/ml/rl/bellman' },
                 { text: '动态规划', link: '/ml/rl/dp' },
                 { text: '蒙特卡洛方法', link: '/ml/rl/mc' },
-                { text: '时间差分方法', link: '/ml/rl/td' },
-                { text: '神经网络和 Q 学习', link: '/ml/rl/nw' },
+                { text: 'TD 方法', link: '/ml/rl/td' },
+                { text: 'DQN', link: '/ml/rl/dqn' },
+              ],
+            },
+            {
+              text: '数理基础',
+              items: [
+                { text: '认识数学', link: '/ml/math/index' },
+                { text: '对数概率', link: '/ml/math/logits' },
               ],
             },
           ],
         }
+      ],
+
+      'explore': [
+        {
+          text: '理论物理',
+          collapsed: false,
+          items: [
+            {
+              text: '弦理论',
+              items: [
+              ],
+            },
+          ],
+        },
+        {
+          text: '航天工程',
+          collapsed: false,
+          items: [
+          ],
+        },
+        {
+          text: '硬核游戏',
+          collapsed: false,
+          items: [
+          ],
+        },
       ],
 
       'life': [
