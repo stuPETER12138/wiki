@@ -6,4 +6,4 @@
 
 ---
 
-- [orCAD](eda/hello_cda.md)
+- [orCAD](eda/hello_cad.md)
