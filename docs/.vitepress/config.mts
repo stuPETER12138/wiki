@@ -223,6 +223,7 @@ export default defineConfig({
         {
           text: '归途思语',
           items: [
+            { text: '简介', link: '/thoughts/index' },
             { text: '2025 春', link: '/thoughts/talk01' },
           ],
         },
