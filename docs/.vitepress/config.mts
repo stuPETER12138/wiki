@@ -1,7 +1,6 @@
 // 配置智能提示
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: '魔法窝瓜',
 
@@ -115,13 +114,12 @@ export default defineConfig({
       },
     },
 
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
       { text: '技能与工具', link: 'skills/index' },
       { text: '机器学习', link: 'ml/index' },
       { text: '科学探索', link: 'explore/index' },
-      { text: '论生活', link: 'life/index' },
+      { text: '归途思语', link: 'thoughts/index' },
     ],
 
     sidebar: {
@@ -179,6 +177,9 @@ export default defineConfig({
                 { text: '蒙特卡洛方法', link: '/ml/rl/mc' },
                 { text: 'TD 方法', link: '/ml/rl/td' },
                 { text: 'DQN', link: '/ml/rl/dqn' },
+                { text: '策略梯度法', link: '/ml/rl/pg' },
+                // { text: '进一步学习', link: '/ml/rl/further' },
+                // { text: '大模型中的强化学习', link: '/ml/rl/llm_rl' },
               ],
             },
             {
@@ -218,11 +219,11 @@ export default defineConfig({
         },
       ],
 
-      'life': [
+      'thoughts': [
         {
-          text: '读书笔记',
+          text: '归途思语',
           items: [
-            { text: '', link: '' },
+            { text: '2025 春', link: '/thoughts/talk01' },
           ],
         },
       ],
