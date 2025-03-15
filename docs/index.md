@@ -22,7 +22,7 @@ features:
   - title: 来学强化学习吧！
     icon: 🤔
     details: 跟着“鱼书”学强化学习，这是我的学习笔记。
-    link: ../ml/rl/hello_rl
+    link: ../ml/rl/rl
     linkText: 查看详情
   - title: 持续更新
     icon: 🫡

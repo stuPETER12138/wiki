@@ -116,16 +116,17 @@ export default defineConfig({
 
     nav: [
       { text: '首页', link: '/' },
-      { text: '技能与工具', link: 'skills/index' },
-      { text: '机器学习', link: 'ml/index' },
-      { text: '科学探索', link: 'explore/index' },
-      { text: '归途思语', link: 'thoughts/index' },
+      { text: '技能与工具', link: 'skills/hello' },
+      { text: '机器学习', link: 'ml/hello' },
+      { text: '科学探索', link: 'explore/hello' },
+      { text: '归途思语', link: 'thoughts/hello' },
     ],
 
     sidebar: {
       '/skills/': [
         {
           text: '工具与技能',
+          link: '/skills/hello',
           items: [
             {
               text: '写作指北',
@@ -138,7 +139,7 @@ export default defineConfig({
             {
               text: '工科软件',
               items: [
-                { text: 'orCAD', link: '/skills/eda/hello_cad' },
+                { text: 'orCAD', link: '/skills/eda/orcad' },
               ],
             },
           ],
@@ -148,6 +149,7 @@ export default defineConfig({
       'ml': [
         {
           text: '机器学习',
+          link: '/ml/hello',
           items: [
             {
               text: '人工智能基础',
@@ -160,7 +162,7 @@ export default defineConfig({
             {
               text: '论文精读',
               items: [
-                { text: '初识论文', link: '/ml/papers/index' },
+                { text: '初识论文', link: '/ml/papers/papers' },
                 { text: 'AI_Oscars', link: '/ml/papers/AI_Oscars' },
                 { text: 'DS-MoE', link: '/ml/papers/DS-MoE' },
                 { text: 'Marco1', link: '/ml/papers/Marco1' },
@@ -170,7 +172,7 @@ export default defineConfig({
             {
               text: '强化学习',
               items: [
-                { text: '初识 RL', link: '/ml/rl/hello_rl' },
+                { text: '初识 RL', link: '/ml/rl/rl' },
                 { text: '马尔可夫决策过程', link: '/ml/rl/mdp' },
                 { text: '贝尔曼方程', link: '/ml/rl/bellman' },
                 { text: '动态规划', link: '/ml/rl/dp' },
@@ -185,7 +187,7 @@ export default defineConfig({
             {
               text: '数理基础',
               items: [
-                { text: '认识数学', link: '/ml/math/index' },
+                { text: '认识数学', link: '/ml/math/math' },
                 { text: '对数概率', link: '/ml/math/logits' },
               ],
             },
@@ -222,8 +224,8 @@ export default defineConfig({
       'thoughts': [
         {
           text: '归途思语',
+          link: '/thoughts/hello',
           items: [
-            { text: '简介', link: '/thoughts/index' },
             { text: '2025 春', link: '/thoughts/talk01' },
           ],
         },
