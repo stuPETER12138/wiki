@@ -180,8 +180,7 @@ export default defineConfig({
                 { text: 'TD 方法', link: '/ml/rl/td' },
                 { text: 'DQN', link: '/ml/rl/dqn' },
                 { text: '策略梯度法', link: '/ml/rl/pg' },
-                // { text: '进一步学习', link: '/ml/rl/further' },
-                // { text: '大模型中的强化学习', link: '/ml/rl/llm_rl' },
+                { text: '大模型中的强化学习', link: '/ml/rl/rl4llm' },
               ],
             },
             {

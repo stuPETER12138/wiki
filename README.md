@@ -1,4 +1,6 @@
-# 魔法窝瓜
+<div align='center'>
+    <img src="./docs/public/ms.jpg" style="zoom: 30%;" />
+</div>
 
 ![example workflow](https://github.com/stuPETER12138/stuPETER12138.github.io/actions/workflows/deploy.yaml/badge.svg)
 
