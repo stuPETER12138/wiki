@@ -1,9 +1,5 @@
 <div align='center'>
-<<<<<<< HEAD
-    <img src="./docs/public/ms.png" style="zoom: 30%;" />
-=======
-    <img src="./docs/public/ms.jpg" width="400" height="225" />
->>>>>>> 955fd05b75f837cff548656b395845ec29d8e78f
+    <img src="./docs/public/ms.png" width="400" height="225" />
 </div>
 
 
