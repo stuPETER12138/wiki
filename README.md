@@ -1,5 +1,7 @@
 <div align='center'>
-    <img src="./docs/public/ms.png" width="400" height="225" />
+    <picture>
+        <img src="/docs/public/ms.png" width="400" height="225">
+    </picture> 
 </div>
 
 
