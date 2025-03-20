@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 要开始啦
-      link: /skills/index
+      link: /skills/hello
     - theme: alt
       text: 在 GitHub 查看
       link: https://github.com/stuPETER12138/stuPETER12138.github.io

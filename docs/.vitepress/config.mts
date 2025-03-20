@@ -142,6 +142,12 @@ export default defineConfig({
                 { text: 'orCAD', link: '/skills/eda/orcad' },
               ],
             },
+            {
+              text: '自动化工具',
+              items: [
+                { text: 'GitHub Action', link: '/skills/automation/action' },
+              ],
+            },
           ],
         }
       ],

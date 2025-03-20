@@ -6,4 +6,8 @@
 
 ---
 
-- [orCAD](eda/hello_cad.md)
+- [orCAD](eda/orcad.md)
+
+---
+
+- [GitHHub Action](automation/action.md)
