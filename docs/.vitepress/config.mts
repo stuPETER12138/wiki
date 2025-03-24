@@ -118,7 +118,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '技能与工具', link: 'skills/hello' },
       { text: '机器学习', link: 'ml/hello' },
-      { text: '科学探索', link: 'explore/hello' },
+      { text: '自由探索', link: 'explore/basic/math' },
       { text: '归途思语', link: 'thoughts/hello' },
     ],
 
@@ -189,22 +189,18 @@ export default defineConfig({
                 { text: '大模型中的强化学习', link: '/ml/rl/rl4llm' },
               ],
             },
-            {
-              text: '数理基础',
-              items: [
-                { text: '认识数学', link: '/ml/math/math' },
-                { text: '对数概率', link: '/ml/math/logits' },
-              ],
-            },
           ],
         }
       ],
 
       'explore': [
         {
-          text: '理论物理',
+          text: '数理知识',
           collapsed: false,
           items: [
+            { text: '了解数学', link: '/explore/basic/math' },
+            { text: '对数概率', link: '/explore/basic/logits' },
+            { text: '挂谷猜想', link: '/explore/basic/kakeya' },
             {
               text: '弦理论',
               items: [
