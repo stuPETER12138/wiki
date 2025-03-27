@@ -146,6 +146,8 @@ export default defineConfig({
               text: '自动化工具',
               items: [
                 { text: 'GitHub Action', link: '/skills/automation/action' },
+                { text: 'Docker', link: '/skills/automation/docker' },
+                { text: 'toml', link: '/skills/automation/toml' },
               ],
             },
           ],

@@ -11,3 +11,5 @@
 ---
 
 - [GitHHub Action](automation/action.md)
+- [Docker](automation/docker.md)
+- [Toml](automation/toml.md)
