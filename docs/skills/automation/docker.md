@@ -43,11 +43,18 @@ docker run hello-world
 ![](./images/hello.jpg)
 
 ```bash
+docker --version
 
+docker ps [-a]
 
+docker images
+
+docker run --help
 ```
 
-
+- 容器是对镜像的虚拟实例化
 
 ## Dockerfile
+
+todo
 

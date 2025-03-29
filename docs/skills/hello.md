@@ -1,15 +1,3 @@
-# 工具与技能
+# 工欲善其事，必先利其器
 
-- [Markdown 语法指北](markdown/learningmd.md)
-- [Latex 语法指北](markdown/latex.md)
-- [VIM 基础教程](markdown/vim)
-
----
-
-- [orCAD](eda/orcad.md)
-
----
-
-- [GitHHub Action](automation/action.md)
-- [Docker](automation/docker.md)
-- [Toml](automation/toml.md)
+🫡希望你可以在我的知识库中学到本领，掌握技能，独立自考，创造自己的世界。

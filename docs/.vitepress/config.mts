@@ -148,6 +148,7 @@ export default defineConfig({
                 { text: 'GitHub Action', link: '/skills/automation/action' },
                 { text: 'Docker', link: '/skills/automation/docker' },
                 { text: 'toml', link: '/skills/automation/toml' },
+                { text: 'GPU 服务器命令', link: '/skills/automation/server' },
               ],
             },
           ],
