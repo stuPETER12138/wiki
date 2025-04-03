@@ -165,7 +165,6 @@ export default defineConfig({
               items: [
                 { text: 'Agent', link: '/ml/ai/agent' },
                 { text: 'RAG', link: '/ml/ai/rag' },
-                { text: 'IL', link: '/ml/ai/IL_survey' },
               ]
             },
             {
@@ -176,6 +175,7 @@ export default defineConfig({
                 { text: 'DS-MoE', link: '/ml/papers/DS-MoE' },
                 { text: 'Marco1', link: '/ml/papers/Marco1' },
                 { text: 'GRPO', link: '/ml/papers/GRPO' },
+                { text: 'Optimus-2', link: '/ml/papers/optimus2' },
               ],
             },
             {
@@ -189,6 +189,7 @@ export default defineConfig({
                 { text: 'TD 方法', link: '/ml/rl/td' },
                 { text: 'DQN', link: '/ml/rl/dqn' },
                 { text: '策略梯度法', link: '/ml/rl/pg' },
+                { text: 'PPO', link: '/ml/rl/ppo' },
                 { text: '大模型中的强化学习', link: '/ml/rl/rl4llm' },
               ],
             },
@@ -204,6 +205,7 @@ export default defineConfig({
             { text: '了解数学', link: '/explore/basic/math' },
             { text: '对数概率', link: '/explore/basic/logits' },
             { text: '挂谷猜想', link: '/explore/basic/kakeya' },
+            { text: '黎曼', link: '/explore/basic/riemann' },
             {
               text: '弦理论',
               items: [
@@ -230,7 +232,8 @@ export default defineConfig({
           text: '归途思语',
           link: '/thoughts/hello',
           items: [
-            { text: '2025 春', link: '/thoughts/talk01' },
+            { text: '从死亡、疯狂、自恋、创伤至情色', link: '/thoughts/talk01' },
+            { text: '语 AI', link: '/thoughts/talk02' },
           ],
         },
       ],

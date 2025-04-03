@@ -7,7 +7,9 @@ sudo
 ls
 ls -a
 cd
+touch
 mkdir
+vim
 nvidia-smi
 rm
 rm -tf
@@ -37,8 +39,10 @@ watch gpustat
 nvitop
 ```
 
-> [Linux 教程](https://www.runoob.com/linux/linux-tutorial.html)
->
-> [【Linux】监控NVIDIA GPU显卡占用状态的命令](https://blog.csdn.net/wzk4869/article/details/139072182)
->
-> [nvitop’s documentation](https://nvitop.readthedocs.io/en/latest/)
+## 优秀范文
+
+[Linux 教程](https://www.runoob.com/linux/linux-tutorial.html)
+
+[【Linux】监控NVIDIA GPU显卡占用状态的命令](https://blog.csdn.net/wzk4869/article/details/139072182)
+
+[nvitop’s documentation](https://nvitop.readthedocs.io/en/latest/)

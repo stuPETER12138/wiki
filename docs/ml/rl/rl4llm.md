@@ -5,9 +5,7 @@
 对于 RL for LLM 重要的工作大致为：
 
 - 推理
-- Agent(S)
-
-短期目标可以是：理解 PPO-Clip
+- Agent(s)
 
 实现框架
 
