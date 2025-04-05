@@ -232,8 +232,8 @@ export default defineConfig({
           text: '归途思语',
           link: '/thoughts/hello',
           items: [
-            { text: '从死亡、疯狂、自恋、创伤至情色', link: '/thoughts/talk01' },
-            { text: '语 AI', link: '/thoughts/talk02' },
+            { text: '从死亡、疯狂、自恋、创伤至情色', link: '/thoughts/2024' },
+            { text: '友谊', link: '/thoughts/friendship' },
           ],
         },
       ],

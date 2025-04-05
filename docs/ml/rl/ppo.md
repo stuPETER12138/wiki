@@ -11,11 +11,11 @@ $$
 
 ## KL 散度
 
-测评两个概率分布相似程度的指标叫做 KL 散度（Kullback-Leibler divergence）。
+测评两个概率分布相似程度的指标叫做 KL 散度（Kullback-Leibler divergence）。当KL散度越大的时候，说明两者的差异程度越大；而当KL散度小的时候，则说明两者的差异程度小。
 $$
 D_{KL} (p(x) || q(x)) = \int p(x) \ln \frac{p(x)}{q(x)} \mathop{}\!\mathrm{d}x
 $$
-在一个局部邻域内，KL 散度近似对称。
+从公式中我们也发现，KL散度不具备对称性，也就是说P PP对于Q QQ的KL散度并不等于Q QQ对于P PP的KL散度。因此，KL散度并不是一个度量（metric），即KL散度并非距离。但在一个局部邻域内，KL 散度近似对称。
 
 ## PPO
 
