@@ -16,4 +16,3 @@
     $$
     \log \prod_i P (E_i) = \sum_i \log P(E_i)
     $$
-    
