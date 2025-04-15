@@ -31,5 +31,5 @@ features:
     icon: 😍
     details: 利用 ChatGPT-4o 生成，肥肠可爱捏。
     link: /explore/interesting/memes
-    linktext: 查看详情
+    linkText: 查看详情
 ---
