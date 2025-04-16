@@ -1,5 +1,5 @@
-// 配置智能提示
 import { defineConfig } from 'vitepress'
+import  footnote_plugin  from 'markdown-it-footnote'
 
 export default defineConfig({
   title: '魔法窝瓜',
@@ -13,6 +13,9 @@ export default defineConfig({
   markdown: {
     lineNumbers: true,
     math: true,
+    config: (md) => {
+      md.use(footnote_plugin)
+    },
   },
 
   head: [
@@ -235,6 +238,7 @@ export default defineConfig({
           items: [
             { text: '从死亡、疯狂、自恋、创伤至情色', link: '/thoughts/2024' },
             { text: '友谊', link: '/thoughts/friendship' },
+            { text: '赛博朋克', link: '/thoughts/cyberpunk' },
           ],
         },
       ],
