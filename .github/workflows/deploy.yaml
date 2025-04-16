@@ -65,4 +65,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          branch: gh-pages # 指定部署到 gh-pages 分支
+          publish-dir: docs/.vitepress/dist
+          publish-branch: gh-pages
