@@ -13,13 +13,13 @@ Data: {date}
 
 ![{title}]({hdurl})
 
-## Explanation:
+## Explanation
     
 {explanation}
     
 ---
 
-**copyright**: 
+**copyright**
 {copyright}
 """
     with open(os.path.join(MD_DIR, MD_NAME), "w", encoding="utf-8") as f:
