@@ -22,10 +22,10 @@ features:
     details: 跟着“鱼书”学强化学习，这是我的学习笔记。
     link: /ml/rl/rl
     linkText: 查看详情
-  - title: Liang-Voice
-    icon: 😋
-    details: A voice clone model of the character Liang Yue in Reverse 1999, fine-tuned based on GPT-SoVITS v3.
-    link: https://www.modelscope.cn/models/msforms/Liang-Voice
+  - title: APOD
+    icon: 👊
+    details: Astronomy Picture of the Day (每日天文图)
+    link: /explore/aerospace/apod
     linkText: 查看详情
   - title: 窝瓜专属表情包
     icon: 😍
