@@ -40,7 +40,7 @@ jobs:
         with:
           python-version: '3.13'
       - name: Install Python Dependencies
-        run: pip install -r ./scripts/requirements.tx
+        run: pip install -r ./scripts/requirements.txt
       - name: Get APOD
         run: python ./scripts/get_apod.py
       - uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消此区域注释
