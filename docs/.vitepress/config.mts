@@ -203,7 +203,6 @@ export default defineConfig({
       'explore': [
         {
           text: '数理知识',
-          // collapsed: false,
           items: [
             { text: '了解数学', link: '/explore/basic/math' },
             { text: '对数概率', link: '/explore/basic/logits' },
@@ -218,13 +217,12 @@ export default defineConfig({
         },
         {
           text: '航天工程',
-          // collapsed: false,
           items: [
+            { text: '每日一图', link: '/explore/aerospace/apod' },
           ],
         },
         {
           text: '一些好玩儿的',
-          // collapsed: false,
           items: [
             { text: '窝瓜表情包', link: '/explore/interesting/memes' },
           ],
