@@ -7,6 +7,9 @@ on:
   # 使用 `master` 分支作为默认分支，请将其更改为 `master`
   push:
     branches: [main]
+  # UTC 6:30 (北京时间 14:30)
+  schedule:
+    - cron: "30 6 * * *" 
 
   # 允许你从 Actions 选项卡手动运行此工作流程
   workflow_dispatch:
@@ -24,6 +27,19 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # 准备工作
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install dependencies 
+        run: pip install -r ./scripts/requirements.txt
+      - name: Get APOD
+        run: python ./scripts/get_apod.py
+
   # 构建工作
   build:
     runs-on: ubuntu-latest
@@ -53,14 +69,15 @@ jobs:
           path: docs/.vitepress/dist
 
   # 部署工作
-  #deploy:
-   # environment:
-    #  name: github-pages
-    #  url: ${{ steps.deployment.outputs.page_url }}
-    #needs: build
-    #runs-on: ubuntu-latest
-    #name: Deploy
-    #teps:
-    #  - name: Deploy to GitHub Pages
-    #    id: deployment
-    #    uses: actions/deploy-pages@v4
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        
