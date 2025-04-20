@@ -174,8 +174,8 @@ export default defineConfig({
               text: '论文精读',
               items: [
                 { text: '初识论文', link: '/ml/papers/papers' },
-                { text: 'AI_Oscars', link: '/ml/papers/AI_Oscars' },
                 { text: 'DS-MoE', link: '/ml/papers/DS-MoE' },
+                { text: 'AI_Oscars', link: '/ml/papers/AI_Oscars' },
                 { text: 'Marco1', link: '/ml/papers/Marco1' },
                 { text: 'GRPO', link: '/ml/papers/GRPO' },
                 { text: 'Optimus-2', link: '/ml/papers/optimus2' },
