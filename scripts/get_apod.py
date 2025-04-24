@@ -5,13 +5,13 @@ import os
 import sys
 
 
-MOEL_KEY = sys.argv[1]
+MODEL_API_KEY = sys.argv[1]
 KEY = "DEMO_KEY"
 MD_NAME = "apod.md"
 MD_DIR = os.path.join(os.path.dirname(__file__), "../docs/explore/aerospace")
 
 
-def get_explanation(explanation, model_key=MOEL_KEY):
+def get_explanation(explanation, model_key=MODEL_API_KEY):
     client = OpenAI(
         base_url='https://api-inference.modelscope.cn/v1/',
         api_key=model_key,
