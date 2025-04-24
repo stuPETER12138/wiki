@@ -25,7 +25,7 @@ def get_explanation(explanation, model_key=MOEL_KEY):
                 'content':  """作为专业英语翻译处理助手，请严格遵循以下步骤执行：
 # 文本分析
 
-- 识别并提取文本中的专业术语以及生僻词汇【CEFR B2 级以上】
+- 识别并提取文本中的专业术语以及生僻词汇【CET 6 级及以上】
 
 # 翻译处理
 
@@ -52,15 +52,26 @@ def get_explanation(explanation, model_key=MOEL_KEY):
         temperature=0.7,
     )
     explanation = response.choices[0].message.content
-
     return explanation
 
-def generate_md_file(title, date, hdurl, explanation):
+def generate_md_file(picture):
+    print(picture_data)
+    title = picture['title']
+    date = picture['date']
+    url = picture['hdurl']
+    explanation = get_explanation(picture['explanation'])
+    if picture['copyright']:
+        copyright = picture['copyright']
+    else:
+        copyright = 'None'
     content = f"""# {title}
 
 Data: {date}
 
-![{title}]({hdurl})
+Copyright：
+{copyright}
+
+![{title}]({url})
 
 ## Explanation
     
@@ -69,17 +80,12 @@ Data: {date}
 """
     with open(os.path.join(MD_DIR, MD_NAME), "w", encoding="utf-8") as f:
         f.write(content)
-    
+    print("\nAPOD image and markdown file generated successfully!\n")
+
+
 try:
     apod_service = apod.APODService(KEY)
     picture_data = apod_service.get_picture()
-    print(picture_data)
-    generate_md_file(
-        picture_data['title'],
-        picture_data['date'],
-        picture_data['hdurl'],
-        get_explanation(picture_data['explanation'])
-    )
-    print("\nAPOD image and markdown file generated successfully!\n")
+    generate_md_file(picture_data)
 except Exception as e:
     print(f"💔 {e} ! \n")
