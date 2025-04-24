@@ -25,7 +25,7 @@ def get_explanation(explanation, model_key=MOEL_KEY):
                 'content':  """作为专业英语翻译处理助手，请严格遵循以下步骤执行：
 # 文本分析
 
-- 识别并提取文本中的专业术语以及生僻词汇【CET 6 级及以上】
+- 识别并提取文本中的专业术语以及生僻词汇【CET 4 级及以上】
 
 # 翻译处理
 
@@ -68,8 +68,7 @@ def generate_md_file(picture):
 
 Data: {date}
 
-Copyright：
-{copyright}
+Copyright：{copyright}
 
 ![{title}]({url})
 
