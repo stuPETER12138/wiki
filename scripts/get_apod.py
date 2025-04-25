@@ -60,9 +60,9 @@ def generate_md_file(picture):
     date = picture['date']
     url = picture['hdurl']
     explanation = get_explanation(picture['explanation'])
-    if picture['copyright']:
+    try:
         copyright = picture['copyright']
-    else:
+    except Exception as e:
         copyright = 'None'
     content = f"""# {title}
 
