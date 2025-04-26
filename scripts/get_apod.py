@@ -11,7 +11,18 @@ MD_NAME = "apod.md"
 MD_DIR = os.path.join(os.path.dirname(__file__), "../docs/explore/aerospace")
 
 
-def get_explanation(explanation, model_key=MODEL_API_KEY):
+def generate_md_file(picture, model_key=MODEL_API_KEY):
+
+    print(picture_data)
+    try:
+        copyright = picture['copyright']
+    except Exception as e:
+        copyright = 'None'
+    title = picture['title']
+    date = picture['date']
+    url = picture['hdurl']
+    explanation = picture['explanation']
+
     client = OpenAI(
         base_url='https://api-inference.modelscope.cn/v1/',
         api_key=model_key,
@@ -52,18 +63,7 @@ def get_explanation(explanation, model_key=MODEL_API_KEY):
         temperature=0.7,
     )
     explanation = response.choices[0].message.content
-    return explanation
-
-def generate_md_file(picture):
-    print(picture_data)
-    title = picture['title']
-    date = picture['date']
-    url = picture['hdurl']
-    explanation = get_explanation(picture['explanation'])
-    try:
-        copyright = picture['copyright']
-    except Exception as e:
-        copyright = 'None'
+    
     content = f"""# {title}
 
 Data: {date}
@@ -75,11 +75,10 @@ Copyright：{copyright}
 ## Explanation
     
 {explanation}
-
 """
     with open(os.path.join(MD_DIR, MD_NAME), "w", encoding="utf-8") as f:
         f.write(content)
-    print("\nAPOD image and markdown file generated successfully!\n")
+    print("\n😋 APOD image and markdown file generated successfully!\n")
 
 
 try:
