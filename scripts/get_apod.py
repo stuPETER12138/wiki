@@ -11,13 +11,15 @@ MD_NAME = "apod.md"
 MD_DIR = os.path.join(os.path.dirname(__file__), "../docs/explore/aerospace")
 
 
-def generate_md_file(picture, model_key=MODEL_API_KEY):
-
+def generate_md_file():
+    apod_service = apod.APODService(KEY)
+    picture_data = apod_service.get_picture()
     print(picture_data)
     try:
         copyright = picture['copyright']
     except Exception as e:
-        copyright = 'None'
+        print("\n😵‍💫Copyright error!\n")
+        copyright = 'Not Found'
     title = picture['title']
     date = picture['date']
     url = picture['hdurl']
@@ -25,7 +27,7 @@ def generate_md_file(picture, model_key=MODEL_API_KEY):
 
     client = OpenAI(
         base_url='https://api-inference.modelscope.cn/v1/',
-        api_key=model_key,
+        api_key=MODEL_API_KEY,
     )
 
     response = client.chat.completions.create(
@@ -82,8 +84,6 @@ Copyright：{copyright}
 
 
 try:
-    apod_service = apod.APODService(KEY)
-    picture_data = apod_service.get_picture()
-    generate_md_file(picture_data)
+    generate_md_file()
 except Exception as e:
     print(f"💔 {e} ! \n")
