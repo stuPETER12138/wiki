@@ -13,8 +13,8 @@ MD_DIR = os.path.join(os.path.dirname(__file__), "../docs/explore/aerospace")
 
 def generate_md_file():
     apod_service = apod.APODService(KEY)
-    picture_data = apod_service.get_picture()
-    print(picture_data)
+    picture = apod_service.get_picture()
+    print(picture)
     try:
         copyright = picture['copyright']
     except Exception as e:
