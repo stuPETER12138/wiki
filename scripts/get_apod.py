@@ -19,7 +19,7 @@ def generate_md_file():
     try:
         copyright = picture['copyright']
     except Exception as e:
-        print("\n😵‍💫No Copyright!\n")
+        print("\n😵‍💫 No Copyright!\n")
         copyright = 'Not Found'
         
     title = picture['title']
@@ -30,7 +30,7 @@ def generate_md_file():
         try:
             url = picture['hdurl']
         except Exception as e:
-            print("\n😵‍💫No hdurl!\n")
+            print("\n😵‍💫 No hdurl!\n")
             url= picture['url']
     else:
         url = ""
@@ -82,7 +82,7 @@ Data: {date}
 
 Copyright：{copyright}
 
-![{title}]({url})
+![]({url})
 
 ## Explanation
     
