@@ -128,7 +128,7 @@ export default defineConfig({
     sidebar: {
       '/skills/': [
         {
-          text: '工具与技能',
+          text: '技能与工具',
           link: '/skills/hello',
           items: [
             {
