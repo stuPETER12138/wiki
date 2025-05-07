@@ -133,7 +133,7 @@ export default defineConfig({
     sidebar: {
       '/skills/': [
         {
-          text: '工具与技能',
+          text: '技能与工具',
           link: '/skills/hello',
           items: [
             {
@@ -213,11 +213,6 @@ export default defineConfig({
             { text: '对数概率', link: '/explore/basic/logits' },
             { text: '挂谷猜想', link: '/explore/basic/kakeya' },
             { text: '黎曼', link: '/explore/basic/riemann' },
-            {
-              text: '弦理论',
-              items: [
-              ],
-            },
           ],
         },
         {
@@ -230,6 +225,7 @@ export default defineConfig({
           text: '一些好玩儿的',
           items: [
             { text: '窝瓜表情包', link: '/explore/interesting/memes' },
+            { text: '海参崴游记', link: '/explore/interesting/Vladivostok' },
           ],
         },
       ],

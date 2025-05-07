@@ -15,21 +15,31 @@ def generate_md_file():
     apod_service = apod.APODService(KEY)
     picture = apod_service.get_picture()
     print(picture)
+    
     try:
         copyright = picture['copyright']
     except Exception as e:
-        print("\n😵‍💫Copyright error!\n")
+        print("\n😵‍💫 No Copyright!\n")
         copyright = 'Not Found'
+        
     title = picture['title']
+    
     date = picture['date']
-    url = picture['hdurl']
+    
+    if picture['media_type'] == 'image':
+        try:
+            url = picture['hdurl']
+        except Exception as e:
+            print("\n😵‍💫 No hdurl!\n")
+            url= picture['url']
+    else:
+        url = ""
+        
     explanation = picture['explanation']
-
     client = OpenAI(
         base_url='https://api-inference.modelscope.cn/v1/',
         api_key=MODEL_API_KEY,
     )
-
     response = client.chat.completions.create(
         model='deepseek-ai/DeepSeek-V3-0324',
         messages=[
@@ -72,7 +82,7 @@ Data: {date}
 
 Copyright：{copyright}
 
-![{title}]({url})
+![]({url})
 
 ## Explanation
     
@@ -83,7 +93,4 @@ Copyright：{copyright}
     print("\n😋 APOD image and markdown file generated successfully!\n")
 
 
-try:
-    generate_md_file()
-except Exception as e:
-    print(f"💔 {e} ! \n")
+generate_md_file()
