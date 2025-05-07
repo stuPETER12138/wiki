@@ -131,6 +131,10 @@ import numpy
 
 ![这是一张图骗](/magicsquash.jpg "魔法窝瓜")
 
+## 添加侍萍
+
+@[bilibili](BV1ng4SeeEJJ)
+
 ## Emoji表情
 
 有待开发（悲^2

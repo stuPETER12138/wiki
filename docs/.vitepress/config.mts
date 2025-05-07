@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
-import  footnote_plugin  from 'markdown-it-footnote'
+import footnote_plugin from 'markdown-it-footnote'
+import markdownItVideo from "@vrcd-community/markdown-it-video"
 
 export default defineConfig({
   title: '魔法窝瓜',
@@ -14,7 +15,11 @@ export default defineConfig({
     lineNumbers: true,
     math: true,
     config: (md) => {
-      md.use(footnote_plugin)
+      md.use(footnote_plugin);
+      md.use(markdownItVideo, {
+        youtube: {width: '100%', height: '387px'},
+        bilibili: {width: '100%', height: '387px'}
+      });
     },
   },
 
