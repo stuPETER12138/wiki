@@ -19,21 +19,26 @@ def generate_md_file():
     try:
         copyright = picture['copyright']
     except Exception as e:
-        print("\n😵‍💫 No Copyright!\n")
+        print("\n 😵‍💫 No Copyright! \n")
         copyright = 'Not Found'
         
     title = picture['title']
     
     date = picture['date']
     
+    content_url = ""
     if picture['media_type'] == 'image':
         try:
             url = picture['hdurl']
         except Exception as e:
-            print("\n😵‍💫 No hdurl!\n")
+            print("\n 😵‍💫 No hdurl! \n")
             url= picture['url']
+        content_url = f"\n![]({url})\n"
+    elif picture['media_type'] == 'video':
+        url= picture['url']
+        content_url = f"\n@[youtube]({url})\n"
     else:
-        url = ""
+        print("\n 😵‍💫 No image or video! \n")
         
     explanation = picture['explanation']
     client = OpenAI(
@@ -80,17 +85,15 @@ def generate_md_file():
 
 Data: {date}
 
-Copyright：{copyright}
-
-![]({url})
-
+Copyright: {copyright}
+{content_url}
 ## Explanation
     
 {explanation}
 """
     with open(os.path.join(MD_DIR, MD_NAME), "w", encoding="utf-8") as f:
         f.write(content)
-    print("\n😋 APOD image and markdown file generated successfully!\n")
+    print("\n 😋 APOD image and markdown file generated successfully! \n")
 
 
 generate_md_file()
