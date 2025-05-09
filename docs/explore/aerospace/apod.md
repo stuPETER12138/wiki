@@ -1,11 +1,11 @@
-# Barred Spiral Galaxy NGC 5335
+# IXPE Explores a Black Hole Jet
 
-Data: 2025-04-26
+Data: 2025-05-09
 
-Copyright：None
+Copyright: Not Found
 
-![Barred Spiral Galaxy NGC 5335](https://apod.nasa.gov/apod/image/2504/NGC5335heic2505_2048.jpg)
+![](https://apod.nasa.gov/apod/image/2505/BLlac_NasaGarcia_4580.jpg)
 
 ## Explanation
     
-This stunning portrait of NGC 5335 was captured by the Hubble Space Telescope（哈勃太空望远镜）.  Some 170,000 light-years（光年） across and over 200 million light-years away toward the constellation Virgo（室女座）, the magnificent spiral galaxy（螺旋星系） is seen face-on in Hubble's view. Within the galactic disk（星系盘）, loose streamers of star forming regions（恒星形成区） lie along the galaxy's flocculent spiral arms（絮状旋臂）. But the most striking feature of NGC 5335 is its prominent central bar（中心棒状结构）. Seen in about 30 percent of galaxies, including our Milky Way（银河系）, bar structures are understood to channel material inward toward the galactic center（星系中心）, fueling star formation. Of course, distant background galaxies（背景星系） are easy to spot, scattered around the sharp Hubble image. Launched in 1990, Hubble is now celebrating its 35th year exploring the cosmos（宇宙） from orbit around planet Earth.
+How do black holes create X-rays（X射线）? Answering this long-standing question was significantly advanced recently with data taken by NASA’s IXPE（成像X射线偏振探测器） satellite. X-rays（X射线） cannot exit a black hole, but they can be created in the energetic（高能的） environment nearby, in particular by a jet（喷流） of particles moving outward. By observing X-ray（X射线） light arriving from near the supermassive（超大质量的） black hole at the center of galaxy BL Lac, called a blazar（耀变体）, it was discovered that these X-rays（X射线） lacked significant polarization（偏振）, which is expected when created more by energetic（高能的） electrons than protons. In the featured artistic illustration, a powerful jet（喷流） is depicted emanating from an orange-colored accretion disk（吸积盘） circling the black hole. Understanding highly energetic（高能的） processes across the universe helps humanity to understand similar processes that occur on or near our Earth.   Put it All Together: Astronomy Puzzle of the Day
