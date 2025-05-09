@@ -139,7 +139,7 @@ import numpy
 
 ## Emoji表情
 
-有待开发（悲^2
+:smile:
 
 ##  表格
 
