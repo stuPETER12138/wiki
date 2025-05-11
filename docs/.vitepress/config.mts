@@ -157,6 +157,7 @@ export default defineConfig({
                 { text: 'Docker', link: '/skills/automation/docker' },
                 { text: 'toml', link: '/skills/automation/toml' },
                 { text: 'GPU 服务器命令', link: '/skills/automation/server' },
+                { text: 'uv', link: '/skills/automation/uv' },
               ],
             },
           ],
