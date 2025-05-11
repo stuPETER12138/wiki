@@ -1,11 +1,11 @@
-# IXPE Explores a Black Hole Jet
+# The Surface of Venus from Venera 14
 
-Data: 2025-05-09
+Data: 2025-05-11
 
-Copyright: Not Found
+Copyright: Donald Mitchell
 
-![](https://apod.nasa.gov/apod/image/2505/BLlac_NasaGarcia_4580.jpg)
+![](https://apod.nasa.gov/apod/image/2505/Venus_Venera14_1705.jpg)
 
 ## Explanation
     
-How do black holes create X-rays（X射线）? Answering this long-standing question was significantly advanced recently with data taken by NASA’s IXPE（成像X射线偏振探测器） satellite. X-rays（X射线） cannot exit a black hole, but they can be created in the energetic（高能的） environment nearby, in particular by a jet（喷流） of particles moving outward. By observing X-ray（X射线） light arriving from near the supermassive（超大质量的） black hole at the center of galaxy BL Lac, called a blazar（耀变体）, it was discovered that these X-rays（X射线） lacked significant polarization（偏振）, which is expected when created more by energetic（高能的） electrons than protons. In the featured artistic illustration, a powerful jet（喷流） is depicted emanating from an orange-colored accretion disk（吸积盘） circling the black hole. Understanding highly energetic（高能的） processes across the universe helps humanity to understand similar processes that occur on or near our Earth.   Put it All Together: Astronomy Puzzle of the Day
+If you could stand on Venus -- what would you see?  Pictured is the view from Venera 14, a robotic Soviet lander which parachuted and air-braked（空气制动） down through the thick Venusian（金星的） atmosphere in March of 1982. The desolate landscape it saw included flat rocks, vast empty terrain, and a featureless sky above Phoebe Regio near Venus' equator. On the lower left is the spacecraft's penetrometer（贯入仪） used to make scientific measurements, while the light piece on the right is part of an ejected（弹出的） lens-cap.  Enduring temperatures near 450 degrees Celsius and pressures 75 times that on Earth, the hardened Venera spacecraft lasted only about an hour. Although data from Venera 14 was beamed across the inner Solar System over 40 years ago, digital processing and merging of Venera's unusual images continues even today.  Recent analyses of infrared measurements taken by ESA's orbiting Venus Express spacecraft indicate that active volcanoes may currently exist on Venus.    Jigsaw Fun: Astronomy Puzzle of the Day
