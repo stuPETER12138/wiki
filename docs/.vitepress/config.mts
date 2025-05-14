@@ -174,6 +174,7 @@ export default defineConfig({
               items: [
                 { text: 'Agent', link: '/ml/ai/agent' },
                 { text: 'RAG', link: '/ml/ai/rag' },
+                { text: '大模型训练', link: '/ml/ai/train' },
               ]
             },
             {
@@ -220,6 +221,13 @@ export default defineConfig({
           text: '航天工程',
           items: [
             { text: '每日一图', link: '/explore/aerospace/apod' },
+            { text: '齐奥尔科夫斯基公式', link: '/explore/aerospace/Tsiolkovsky' },
+          ],
+        },
+        {
+          text: '量子计算',
+          items: [
+            { text: '那么，什么是量子计算', link: '/explore/quantum/what' },
           ],
         },
         {
