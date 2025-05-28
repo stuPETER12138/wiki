@@ -44,7 +44,7 @@ jobs:
       - name: Get APOD
         run: python ./scripts/get_apod.py ${{ secrets.MODEL_KEY }}
       - name: Update README
-        run: python./scripts/sync_blog_to_readme.py
+        run: python ./scripts/sync_blog_to_readme.py
       - name: Set pnpm
         uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消此区域注释
         with:
