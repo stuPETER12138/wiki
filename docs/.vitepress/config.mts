@@ -247,7 +247,6 @@ export default defineConfig({
             { text: '从死亡、疯狂、自恋、创伤至情色', link: '/thoughts/2024' },
             { text: '友谊', link: '/thoughts/friendship' },
             { text: '下一顿吃什么', link: '/thoughts/next' },
-            { text: '梦', link: '/thoughts/dream' },
           ],
         },
       ],
