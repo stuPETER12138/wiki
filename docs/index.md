@@ -5,9 +5,12 @@ hero:
   name: "魔法窝瓜"
   text: "个人知识库" 
   tagline: 任何足够先进的科技，皆与魔法无异
+  image:
+    src: /app-launch.svg
+    alt: VitePress
   actions:
     - theme: brand
-      text: 要开始啦
+      text: 点火，起飞！
       link: /skills/hello
     - theme: alt
       text: 在 GitHub 查看
