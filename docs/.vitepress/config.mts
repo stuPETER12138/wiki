@@ -221,7 +221,7 @@ export default defineConfig({
           text: '航天工程',
           items: [
             { text: '每日一图', link: '/explore/aerospace/apod' },
-            { text: '齐奥尔科夫斯基公式', link: '/explore/aerospace/Tsiolkovsky' },
+            { text: '齐奥尔科夫斯基公式', link: '/explore/aerospace/tsiolkovsky' },
           ],
         },
         {
