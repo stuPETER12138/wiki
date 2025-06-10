@@ -1,6 +1,4 @@
-"""
-同步博客到 README.md
-"""
+"""同步博客到 README.md"""
 import os
 import re
 import glob

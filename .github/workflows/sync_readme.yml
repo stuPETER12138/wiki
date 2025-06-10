@@ -2,8 +2,6 @@ name: Sync README
 
 on:
   push:
-    branches: 
-      [main]
     paths:
       - 'docs/**'
       - 'scripts/sync_blog_to_readme.py'
