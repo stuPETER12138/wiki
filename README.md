@@ -23,7 +23,7 @@
 - [那么，什么是量子计算？](https://stupeter12138.github.io/explore/quantum/what)
 - [魔法窝瓜专属表情包](https://stupeter12138.github.io/explore/interesting/memes)
 - [黎曼](https://stupeter12138.github.io/explore/basic/riemann)
-- [齐奥尔科夫斯基公式](https://stupeter12138.github.io/explore/aerospace/Tsiolkovsky)
+- [齐奥尔科夫斯基公式](https://stupeter12138.github.io/explore/aerospace/tsiolkovsky)
 
 ### 机器学习
 
