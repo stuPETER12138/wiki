@@ -1,16 +1,3 @@
-<div align='center'>
-    <picture>
-        <img src="./docs/public/logo.png" width="400" height="225">
-    </picture> 
-</div>
-
-![example workflow](https://github.com/stuPETER12138/stuPETER12138.github.io/actions/workflows/deploy.yaml/badge.svg)
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/stuPETER12138/stuPETER12138.github.io)
-
----
-
-任何足够先进的科技，皆与魔法无异 ——[亚瑟.克拉克](https://baike.baidu.com/item/%E4%BA%9A%E7%91%9F%C2%B7%E6%9F%A5%E7%90%86%E6%96%AF%C2%B7%E5%85%8B%E6%8B%89%E5%85%8B/213457)
-
 
 ## 博客内容
 
@@ -24,7 +11,7 @@
 - [那么，什么是量子计算？](https://stupeter12138.github.io/explore/quantum/what)
 - [魔法窝瓜专属表情包](https://stupeter12138.github.io/explore/interesting/memes)
 - [黎曼](https://stupeter12138.github.io/explore/basic/riemann)
-- [齐奥尔科夫斯基公式](https://stupeter12138.github.io/explore/aerospace/Tsiolkovsky)
+- [齐奥尔科夫斯基公式](https://stupeter12138.github.io/explore/aerospace/tsiolkovsky)
 
 ### 机器学习
 
@@ -65,6 +52,7 @@
 
 ### 归途思语
 
+- [下一顿吃什么](https://stupeter12138.github.io/thoughts/next)
 - [从死亡、疯狂、自恋、创伤至情色](https://stupeter12138.github.io/thoughts/2024)
 - [友谊](https://stupeter12138.github.io/thoughts/friendship)
 - [归途思语](https://stupeter12138.github.io/thoughts/hello)
