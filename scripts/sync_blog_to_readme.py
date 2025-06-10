@@ -121,7 +121,7 @@ def update_readme():
         current_content = ""
     
     # 提取README的头部内容
-    header_match = re.search(r'## 博客大纲', current_content, re.DOTALL)
+    header_match = re.search(r'## 博客内容', current_content, re.DOTALL)
     header = current_content[:header_match.start()] if header_match else ""
     
     # 获取博客条目并生成目录
@@ -129,7 +129,7 @@ def update_readme():
     toc = generate_toc(entries)
     
     # 组合新的README内容
-    new_content = f"{header}\n{toc}"
+    new_content = f"{header}{toc}"
     
     # 写入README文件
     try:

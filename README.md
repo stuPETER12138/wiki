@@ -11,7 +11,6 @@
 
 任何足够先进的科技，皆与魔法无异 ——[亚瑟.克拉克](https://baike.baidu.com/item/%E4%BA%9A%E7%91%9F%C2%B7%E6%9F%A5%E7%90%86%E6%96%AF%C2%B7%E5%85%8B%E6%8B%89%E5%85%8B/213457)
 
-
 ## 博客内容
 
 ### 自由探索
@@ -65,6 +64,7 @@
 
 ### 归途思语
 
+- [下一顿吃什么](https://stupeter12138.github.io/thoughts/next)
 - [从死亡、疯狂、自恋、创伤至情色](https://stupeter12138.github.io/thoughts/2024)
 - [友谊](https://stupeter12138.github.io/thoughts/friendship)
 - [归途思语](https://stupeter12138.github.io/thoughts/hello)
