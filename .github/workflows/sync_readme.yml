@@ -32,6 +32,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git pull origin main
           git add README.md
           # 检查是否有更改，只有在有更改时才提交
           if ! git diff --staged --quiet; then
