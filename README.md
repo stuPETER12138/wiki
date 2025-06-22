@@ -1,15 +1,17 @@
 <div align='center'>
     <picture>
-        <img src="./docs/public/logo.png" width="400" height="225">
+        <img src="./docs/public/logo.png" width="320" height="180">
     </picture> 
 </div>
 
 ![example workflow](https://github.com/stuPETER12138/stuPETER12138.github.io/actions/workflows/deploy.yaml/badge.svg)
+
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/stuPETER12138/stuPETER12138.github.io)
 
 ---
 
-任何足够先进的科技，皆与魔法无异 ——[亚瑟.克拉克](https://baike.baidu.com/item/%E4%BA%9A%E7%91%9F%C2%B7%E6%9F%A5%E7%90%86%E6%96%AF%C2%B7%E5%85%8B%E6%8B%89%E5%85%8B/213457)
+<p align="center"><i> 任何足够先进的科技，皆与魔法无异。—— 亚瑟.克拉克(1917 – 2008) </i></p>
+
 
 ## 博客内容
 
