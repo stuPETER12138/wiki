@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
-import footnote_plugin from 'markdown-it-footnote'
-import markdownItVideo from "@vrcd-community/markdown-it-video"
+import footnote from 'markdown-it-footnote'
 
 export default defineConfig({
   title: '魔法窝瓜',
@@ -15,11 +14,7 @@ export default defineConfig({
     lineNumbers: true,
     math: true,
     config: (md) => {
-      md.use(footnote_plugin);
-      md.use(markdownItVideo, {
-        youtube: {width: '100%', height: '387px'},
-        bilibili: {width: '100%', height: '387px'}
-      });
+      md.use(footnote);
     },
   },
 
@@ -123,98 +118,58 @@ export default defineConfig({
     },
 
     nav: [
-      { text: '首页', link: '/' },
-      { text: '技能与工具', link: 'skills/hello' },
-      { text: '机器学习', link: 'ml/hello' },
-      { text: '自由探索', link: 'explore/basic/math' },
-      { text: '归途思语', link: 'thoughts/hello' },
+      { text: '🏠首页', link: '/' },
+      { text: '🛠️技能与工具', link: 'skills/hello' },
+      { text: '🤓知识探索', link: 'explore/aerospace/apod' },
+      { text: '🤔归途思语', link: 'thoughts/hello' },
     ],
 
     sidebar: {
       '/skills/': [
         {
-          text: '技能与工具',
+          text: '有趣的工具',
           link: '/skills/hello',
           items: [
-            {
-              text: '写作指北',
-              items: [
-                { text: 'Markdown 指北', link: '/skills/markdown/learningmd' },
-                { text: 'Latex 指北', link: '/skills/markdown/latex' },
-                { text: 'VIM 基础', link: '/skills/markdown/vim' },
-              ]
-            },
-            {
-              text: '工科软件',
-              items: [
-                { text: 'orCAD', link: '/skills/eda/orcad' },
-              ],
-            },
-            {
-              text: '自动化工具',
-              items: [
-                { text: 'GitHub Action', link: '/skills/automation/action' },
-                { text: 'Docker', link: '/skills/automation/docker' },
-                { text: 'toml', link: '/skills/automation/toml' },
-                { text: 'GPU 服务器命令', link: '/skills/automation/server' },
-                { text: 'uv', link: '/skills/automation/uv' },
-              ],
-            },
+            { text: 'Markdown 指北', link: '/skills/tools/learningmd' },
+            { text: 'Latex 指北', link: '/skills/tools/latex' },
+            { text: 'VIM 基础', link: '/skills/tools/vim' },
+            { text: 'orCAD', link: '/skills/tools/orcad' },
+            { text: 'GitHub Action', link: '/skills/tools/action' },
+            { text: 'Docker', link: '/skills/tools/docker' },
           ],
-        }
-      ],
-
-      'ml': [
+        },
         {
-          text: '机器学习',
-          link: '/ml/hello',
+          text: 'Python是最好的语言',
           items: [
-            {
-              text: '人工智能基础',
-              items: [
-                { text: 'Agent', link: '/ml/ai/agent' },
-                { text: 'RAG', link: '/ml/ai/rag' },
-                { text: '大模型训练', link: '/ml/ai/train' },
-              ]
-            },
-            {
-              text: '论文精读',
-              items: [
-                { text: '初识论文', link: '/ml/papers/papers' },
-                { text: 'DS-MoE', link: '/ml/papers/DS-MoE' },
-                { text: 'AI_Oscars', link: '/ml/papers/AI_Oscars' },
-                { text: 'Marco1', link: '/ml/papers/Marco1' },
-                { text: 'GRPO', link: '/ml/papers/GRPO' },
-                { text: 'Optimus-2', link: '/ml/papers/optimus2' },
-              ],
-            },
-            {
-              text: '强化学习',
-              items: [
-                { text: '初识 RL', link: '/ml/rl/rl' },
-                { text: '马尔可夫决策过程', link: '/ml/rl/mdp' },
-                { text: '贝尔曼方程', link: '/ml/rl/bellman' },
-                { text: '动态规划', link: '/ml/rl/dp' },
-                { text: '蒙特卡洛方法', link: '/ml/rl/mc' },
-                { text: 'TD 方法', link: '/ml/rl/td' },
-                { text: 'DQN', link: '/ml/rl/dqn' },
-                { text: '策略梯度法', link: '/ml/rl/pg' },
-                { text: 'PPO', link: '/ml/rl/ppo' },
-                { text: '大模型中的强化学习', link: '/ml/rl/rl4llm' },
-              ],
-            },
+            { text: 'uv', link: '/skills/python/uv' },
+            { text: 'toml', link: '/skills/python/toml' },
+            { text: 'GPU 服务器命令', link: '/skills/python/server' },
           ],
-        }
+        },
+        {
+          text: '强化学习',
+          items: [
+            { text: '初识 RL', link: '/skills/rl/rl' },
+            { text: '马尔可夫决策过程', link: '/skills/rl/mdp' },
+            { text: '贝尔曼方程', link: '/skills/rl/bellman' },
+            { text: '动态规划', link: '/skills/rl/dp' },
+            { text: '蒙特卡洛方法', link: '/skills/rl/mc' },
+            { text: 'TD 方法', link: '/skills/rl/td' },
+            { text: 'DQN', link: '/skills/rl/dqn' },
+            { text: '策略梯度法', link: '/skills/rl/pg' },
+            { text: 'PPO', link: '/skills/rl/ppo' },
+            { text: '大模型中的强化学习', link: '/skills/rl/rl4llm' },
+          ],
+        },
       ],
 
       'explore': [
         {
-          text: '数理知识',
+          text: '数学',
           items: [
-            { text: '了解数学', link: '/explore/basic/math' },
-            { text: '对数概率', link: '/explore/basic/logits' },
-            { text: '挂谷猜想', link: '/explore/basic/kakeya' },
-            { text: '黎曼', link: '/explore/basic/riemann' },
+            { text: '对数概率', link: '/explore/math/logits' },
+            { text: '挂谷猜想', link: '/explore/math/kakeya' },
+            { text: '黎曼', link: '/explore/math/riemann' },
           ],
         },
         {
@@ -225,9 +180,9 @@ export default defineConfig({
           ],
         },
         {
-          text: '量子计算',
+          text: '人工智能',
           items: [
-            { text: '那么，什么是量子计算', link: '/explore/quantum/what' },
+            { text: '大模型的后训练', link: '/explore/ai/fine-tuning' },
           ],
         },
         {

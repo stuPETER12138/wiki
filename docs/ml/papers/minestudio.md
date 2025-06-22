@@ -1,3 +1,0 @@
-# MineStudio
-
-![](./images/minestudio.jpeg)
