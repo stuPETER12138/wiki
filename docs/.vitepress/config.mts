@@ -139,10 +139,12 @@ export default defineConfig({
           ],
         },
         {
-          text: 'Python是最好的语言',
+          text: 'Python 是最好的语言',
           items: [
             { text: 'uv', link: '/skills/python/uv' },
+            { text: 'ruff', link: '/skills/python/ruff' },
             { text: 'toml', link: '/skills/python/toml' },
+            { text: 'io', link: '/skills/python/io' },
             { text: 'GPU 服务器命令', link: '/skills/python/server' },
           ],
         },
