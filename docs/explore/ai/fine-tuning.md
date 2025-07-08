@@ -50,6 +50,7 @@
 
 [^1]: [Qwen3 X ModelScope工具链: 飞速训练 + 全面评测](https://mp.weixin.qq.com/s/VopxIcPOc4sQRthxYGVfyw)
 [^2]: [xming521/WeClone: 欢迎star⭐。🚀从聊天记录创造数字分身的一站式解决方案💡 使用微信聊天记录微调大语言模型，让大模型有“那味儿”，并绑定到聊天机器人，实现自己的数字分身。 数字克隆/数字分身/数字永生/声音克隆/LLM/大语言模型/微信聊天机器人/LoRA](https://github.com/xming521/WeClone)
+
 [^3]: [hiyouga/EasyR1: EasyR1: An Efficient, Scalabl](https://github.com/hiyouga/EasyR1)
 [^4]: [LLM Post-Training: A Deep Dive into Reasoning Large Language Models | alphaXiv](https://www.alphaxiv.org/abs/2502.21321)
 

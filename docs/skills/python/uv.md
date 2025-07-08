@@ -56,6 +56,8 @@ uv pip tree
 ## 使用工具
 
 ```bash
+uv tool install ruff
+
 uvx ruff
 ```
 
