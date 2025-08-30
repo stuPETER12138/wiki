@@ -163,6 +163,12 @@ export default defineConfig({
             { text: '大模型中的强化学习', link: '/skills/rl/rl4llm' },
           ],
         },
+        {
+          text: 'Rust 门',
+          items: [
+            { text: '所有权', link: '/skills/rust/ownership' }
+          ]
+        }
       ],
 
       'explore': [
