@@ -15,4 +15,4 @@ docs/.vitepress/dist
 docs/.vitepress/cache
 
 # AI Virtual environments
-.env
+.qwen/.env
