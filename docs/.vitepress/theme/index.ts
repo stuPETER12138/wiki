@@ -1,5 +1,8 @@
 import DefaultTheme from 'vitepress/theme'
 import './custom.css'
+import './blur.css'
+import './sidebarIcon.css'
+import './var.css'
 import giscusTalk from 'vitepress-plugin-comment-with-giscus'
 import { useData, useRoute } from 'vitepress'
 
