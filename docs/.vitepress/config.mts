@@ -190,7 +190,7 @@ export default defineConfig({
         {
           text: '人工智能',
           items: [
-            { text: '大模型的后训练', link: '/explore/ai/fine-tuning' },
+            { text: '大模型的后训练', link: '/explore/ai/post-training' },
           ],
         },
         {

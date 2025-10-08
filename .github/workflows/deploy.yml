@@ -42,7 +42,7 @@ jobs:
       - name: Install Python Dependencies
         run: pip install -r ./scripts/requirements.txt
       - name: Get APOD
-        run: python ./scripts/get_apod.py ${{ secrets.MODEL_KEY }}
+        run: python ./scripts/get_apod.py --model_api_key ${{ secrets.MODEL_KEY }}
       - name: Set pnpm
         uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消此区域注释
         with:

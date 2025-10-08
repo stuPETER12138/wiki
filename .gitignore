@@ -14,5 +14,5 @@ node_modules/
 docs/.vitepress/dist
 docs/.vitepress/cache
 
-# AI Virtual environments
-.qwen/.env
+# APOD file
+docs/explore/aerospace/apod.md

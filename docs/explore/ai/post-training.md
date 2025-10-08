@@ -1,8 +1,4 @@
-# 大模型训练
-
-## Pre-training
-
-
+# 大模型的后训练
 
 ## Post-training
 
@@ -46,6 +42,33 @@
 
 - [volcengine/verl: verl: Volcano Engine Reinforcement Learning for LLMs](https://github.com/volcengine/verl)
 
+## LoRA
+
+![](./images/lora.png)
+
+LoRA[^6]是一种参数高效微调方法，用于将大语言模型适应到下游任务。LoRA 显著减少了可训练参数的数量和 GPU 内存需求，同时实现了与完全微调相当甚至更优的性能，并且独特之处在于它不引入额外的推理延迟。
+
+> 假设：适应过程中的权重更新具有较低的“内在秩。
+>
+> Weight updates during adaptation have a low "intrinsic rank.
+
+对于任何预训练权重矩阵 $W_0 \in \mathbb{R}^{d \times k}$，LoRA 将权重更新 $\Delta W$ 表示为低秩分解：
+$$
+W = W_0 + \Delta W = W_0 + BA
+$$
+其中 $B \in \mathbb{R}^{d \times r}$ 和 $A \in \mathbb{R}^{r \times k}$ 的秩 $r \ll \min(d,k)$。
+
+在训练期间，原始权重 $W_0$ 保持冻结，只训练小得多的矩阵 $A$ 和 $B$。前向传播变为：
+$$
+h = W_0x + \Delta Wx = W_0x + BAx
+$$
+其中： 
+
+- 矩阵 $A$ 用随机高斯值初始化，而 $B$ 初始化为零，确保训练开始时 $\Delta W = 0$
+- 对 $BAx$ 应用缩放因子 $\frac{\alpha}{r}$，以在改变秩 $r$ 时减少超参数敏感性
+
+
+
 ## Reference
 
 [^1]: [Qwen3 X ModelScope工具链: 飞速训练 + 全面评测](https://mp.weixin.qq.com/s/VopxIcPOc4sQRthxYGVfyw)
@@ -55,3 +78,5 @@
 [^4]: [LLM Post-Training: A Deep Dive into Reasoning Large Language Models | alphaXiv](https://www.alphaxiv.org/abs/2502.21321)
 
 [^5]: [A Survey on Post-training of Large Language Models | alphaXiv](https://www.alphaxiv.org/abs/2503.06072)
+[^6]: [[2106.09685\] LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
+

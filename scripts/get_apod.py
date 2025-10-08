@@ -1,13 +1,21 @@
-import os
-import sys
+from pathlib import Path
+import argparse
 from nasa_apod import apod
 from openai import OpenAI
 from rich import print
 
-MODEL_API_KEY = sys.argv[1]
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--model_api_key",
+    type=str,
+    default="",
+    help="ModelScope API Key",
+)   
+args = parser.parse_args()
+MODEL_API_KEY = args.model_api_key
 KEY = "DEMO_KEY"
-MD_NAME = "apod.md"
-MD_DIR = os.path.join(os.path.dirname(__file__), "../docs/explore/aerospace")
+MD_DIR = Path(__file__).parent.parent / "docs" / "explore" / "aerospace"
 apod_service = apod.APODService(KEY)
 picture = apod_service.get_picture()
 print(picture)
@@ -53,7 +61,7 @@ extra_body = {
 }
 
 response = client.chat.completions.create(
-    model="Qwen/Qwen3-235B-A22B",  # ModelScope Model-Id
+    model="Qwen/Qwen3-235B-A22B-Instruct-2507",  # ModelScope Model-Id
     messages=[
         {
             "role": "system",
@@ -85,18 +93,17 @@ response = client.chat.completions.create(
     stream=True,
     extra_body=extra_body,
 )
-done_thinking = False
+
 for chunk in response:
-    thinking_chunk = chunk.choices[0].delta.reasoning_content
-    answer_chunk = chunk.choices[0].delta.content
-    if thinking_chunk != "":
-        print(thinking_chunk, end="", flush=True)
-    elif answer_chunk != "":
-        if not done_thinking:
-            print("\n\n === Final Answer ===\n")
-            done_thinking = True
-        print(answer_chunk, end="", flush=True)
-        explanation += answer_chunk
+    print(chunk.choices[0].delta.content, end='', flush=True)
+    for chunk in response:
+        try:
+            content = chunk.choices[0].delta.content
+        except Exception:
+            content = None
+        if content:
+            print(content, end='', flush=True)
+            explanation += content
 
 # write the content to the markdown file
 content = f"""# {title}
@@ -110,7 +117,7 @@ Copyright: {copyright}
 {explanation}
 """
 
-with open(os.path.join(MD_DIR, MD_NAME), "w", encoding="utf-8") as f:
+with open(Path(MD_DIR)/"apod.md", "w", encoding="utf-8") as f:
     f.write(content)
 
 
