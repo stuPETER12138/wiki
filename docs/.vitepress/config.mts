@@ -120,7 +120,7 @@ export default defineConfig({
     nav: [
       { text: '🏠首页', link: '/' },
       { text: '🛠️技能与工具', link: 'skills/hello' },
-      { text: '🤓知识探索', link: 'explore/aerospace/apod' },
+      { text: '🤓知识探索', link: 'explore/aerospace/Tsiolkovsky' },
       { text: '🤔归途思语', link: 'thoughts/hello' },
     ],
 
