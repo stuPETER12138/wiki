@@ -22,11 +22,6 @@ features:
     details: 跟着“鱼书”学强化学习，这是我的学习笔记
     link: /skills/rl/rl
     linkText: 查看详情
-  - title: APOD
-    icon: 👊
-    details: Astronomy Picture of the Day (每日天文图)
-    link: /explore/aerospace/apod
-    linkText: 查看详情
   - title: 窝瓜表情包
     icon: 😍
     details: ChatGPT-4o 生成，可爱捏

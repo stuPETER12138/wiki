@@ -1,5 +1,4 @@
-# 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
-
+# 构建 VitePress 站点并将其部署到 GitHub Pages 的工作流程
 name: Deploy VitePress site to Pages
 
 on:
@@ -7,9 +6,6 @@ on:
   # 使用 `master` 分支作为默认分支，请将其更改为 `master`
   push:
     branches: [main]
-  # UTC 7:30 (北京时间 15:30)
-  schedule:
-    - cron: "30 7 * * *" 
 
   # 允许你从 Actions 选项卡手动运行此工作流程
   workflow_dispatch:
@@ -35,14 +31,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
-      - name: Set Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.13'
-      - name: Install Python Dependencies
-        run: pip install -r ./scripts/requirements.txt
-      - name: Get APOD
-        run: python ./scripts/get_apod.py --model_api_key ${{ secrets.MODEL_KEY }}
       - name: Set pnpm
         uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消此区域注释
         with:

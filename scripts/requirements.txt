@@ -1,3 +1,0 @@
-nasa-apod
-rich
-openai
