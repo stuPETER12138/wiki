@@ -136,6 +136,7 @@ export default defineConfig({
             { text: 'orCAD', link: '/skills/tools/orcad' },
             { text: 'GitHub Action', link: '/skills/tools/action' },
             { text: 'Docker', link: '/skills/tools/docker' },
+            { text: 'SSH 指北', link: '/skills/tools/ssh'},
           ],
         },
         {
