@@ -20,7 +20,6 @@ SSH（Secure Shell）[^1]是远程连接服务器的安全协议。它加密所�
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
-一路回车使用默认设置。
 
 **2. 复制公钥到服务器**
 ```bash
@@ -57,7 +56,7 @@ Host myserver
 
 配置后直接使用 `ssh myserver` 登录。
 
-## GitHub SSH 配置
+## GitHub SSH 配置案例
 
 GitHub 提供 HTTPS 和 SSH 两种连接方式。SSH 方式更安全且免密码。
 
@@ -69,21 +68,22 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 **2. 添加公钥到 GitHub**
-- 访问 GitHub → Settings → SSH and GPG keys → New SSH key
+
 - 复制公钥内容：
 ```bash
 cat ~/.ssh/id_ed25519.pub
 ```
+- 访问 GitHub → Settings → SSH and GPG keys → New SSH key
 
 **3. 测试连接**
 ```bash
 ssh -T git@github.com
 ```
-成功提示：`Hi yourname! You've successfully authenticated.`
+成功提示：`Hi your_name! You've successfully authenticated.`
 
 **4. 使用 SSH 克隆**
 ```bash
-git clone git@github.com:yourname/repo.git
+git clone git@github.com:your_name/repo.git
 ```
 
 ## 常见问题解决
@@ -98,10 +98,6 @@ chmod 600 ~/.ssh/id_*
 ```bash
 ssh-keygen -R server_ip
 ```
-
-### 多设备管理
-建议每台设备生成独立密钥，在 GitHub 添加多个 SSH key。
-
 
 ## 高级功能
 
@@ -122,7 +118,5 @@ ssh-keygen -R server_ip
 - 📚 高效学习 Linux 系统
 
 SSH 是打开远程世界大门的钥匙，让你真正与世界上的计算机系统对话。
-
-## 参考
 
 [^1]: **[GitHub SSH 文档](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)**
