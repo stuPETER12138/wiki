@@ -219,6 +219,7 @@ export default defineConfig({
             { text: "友谊", link: "/thoughts/friendship" },
             { text: "下一顿吃什么", link: "/thoughts/next" },
             { text: "隐喻谈话", link: "/thoughts/metaphor" },
+            { text: "游戏的意义", link: "/thoughts/meaning_of_egames" },
           ],
         },
       ],
